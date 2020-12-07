@@ -1,0 +1,28 @@
+﻿Summary;Assignee;Reporter;Issue Type;Sprint;Description;Priority;Part of
+Account;;Edward;Story;;As webshop-owner, I want my customers to be able to create an account on the webshop.;;
+Account;;Edward;Story;;As webshop-owner, I want my customers to be able to login to their account and see their previous orders.;;
+Shopping Cart;;Edward;Story;;As webshop-owner, I want my customers to be able to add, and remove items to/from their shopping cart.;;
+Shopping Cart;;Edward;Story;;As webshop-owner, I want my customers to be able to order items from the webshop;;
+Filtering;;Edward;Story;;As webshop-owner, I want my customers to be able to filter on all the items in the webshop.;;
+Reviews;;Edward;Story;;As webshop-owner, I want my customers to be able to leave a review on an item they previously bought.;;
+Paying;;Edward;Story;;As webshop-owner, I want my customers to be able to pay for their orders in the common ways (Ideal, CC, Accept-giro).;;
+Social;;Edward;Story;;As webshop-owner, I want my customers to be able to share their order / review on Social Media.;;
+Navigation;;Edward;Story;;As webshop-owner, I want my customers to be able to navigate through the webshop in a normal way.;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+Admin: Products;;Edward;Story;;As webshop-owner, I want to be able to add additional products in my webshop, including pictures.;;
+Admin: Track Sales;;Edward;Story;;As webshop-owner, I want to be able to track sales and customers.;;
+Admin: Filtering;;Edward;Story;;As webshop-owner, I want to be able to add, and remove filtering options to the webshop.;;
+Admin: Discounts;;Edward;Story;;As webshop-owner, I want to be able to add coupons for discounts or special actions to the webshop.;;
+Admin: Templates;;Edward;Story;;As webshop-owner, I want to be able to use personalised templates / themes for the webshop.;;
+Admin: Products;;Edward;Story;;As webshop-owner, I want to be able to configure the menu of the webshop with new products, or remove items from the menu;;
+Admin: Products;;Edward;Story;;As webshop-owner, I want to be able to edit my product details in the webshop.;;
+Admin: Products;;Edward;Story;;As webshop-owner, I want to be able to add details to products in the webshop.;;
+Admin: Products;;Edward;Story;;As webshop-owner, I want to be able to show my customers reviews with the product in the webshop.;;
+Admin: Shop;;Edward;Story;;As webshop-owner, I want to be able to change the home screen of the webshop.;;
+Admin: Products;;Edward;Story;;As webshop-owner, I want to be able to sell my products in Western-Europe.;;

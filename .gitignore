@@ -1,0 +1,7 @@
+/libspecs/
+/*.html
+/*.png
+/*.xml
+/*.log
+/.project
+*.pyc
