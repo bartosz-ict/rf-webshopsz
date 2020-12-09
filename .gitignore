@@ -1,3 +1,4 @@
+/Data/keepass_db.key
 /libspecs/
 /*.html
 /*.png
@@ -5,3 +6,4 @@
 /*.log
 /.project
 *.pyc
+/.pydevproject
