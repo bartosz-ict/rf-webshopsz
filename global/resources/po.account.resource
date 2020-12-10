@@ -1,6 +1,7 @@
 *** Settings ***
 Library           Collections
 Resource          Shared.resource
+Resource          database.resource
 
 *** Keywords ***
 Open acount creation page
@@ -59,3 +60,26 @@ Get account options
     END
     Click Element    jquery:li:has(.fa-user)
     [Return]    ${account_options}
+
+Create an account in the database if not already present
+    [Arguments]    ${account}
+    Connect to Shop DB
+    ${result}=    Read unique user based on email    ${account.email}
+    Disconnect From Database
+    # TODO Vervangen door INSERT in db
+    Run Keyword If    len(${result})==0    Run Keywords    Navigate to the webshop    AND    Create a new account    ${account}
+
+Get column items
+    ${column_items}    Create List
+    ${list}    Get WebElements    css:#column-right a
+    Sleep    1
+    FOR    ${element}    IN    @{list}
+        ${text}    Get Text    ${element}
+        Append To List    ${column_items}    ${text}
+    END
+    [Return]    ${column_items}
+
+Right column has option
+    [Arguments]    ${option}
+    ${column_items}    Get column items
+    List Should Contain Value    ${column_items}    ${option}
