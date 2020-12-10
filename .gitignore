@@ -1,9 +1,9 @@
-/Data/keepass_db.key
+*.pyc
+*.key
 /libspecs/
+/*.log
 /*.html
 /*.png
-/*.xml
-/*.log
 /.project
-*.pyc
 /.pydevproject
+/*.xml
