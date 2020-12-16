@@ -1,6 +1,5 @@
 *** Settings ***
-Library           SeleniumLibrary
-Resource          ../Environment/webshopsz.test1.resource
+Resource   ${EXECDIR}${/}global${/}resources${/}all.resource
 
 *** Keywords ***
 Navigate to the webshop

@@ -1,5 +1,3 @@
-*** Settings ***
-
 *** Variables ***
 &{registered_account}    firstname=Sebastiaan    lastname=Molenaar    email=smolenaar@gmail.com
 ...               telephone=123456789    password=Welkom01    newsletter=1

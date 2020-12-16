@@ -1,6 +1,7 @@
 *** Settings ***
-Resource          ../../global/resources/all.resource
-Resource          ../testdata/customers.resource
+Resource          ${EXECDIR}${/}global${/}resources${/}all.resource
+Resource          ${EXECDIR}${/}project-1${/}testdata${/}customers.resource
+
 Suite Teardown    Close All Browsers
 
 *** Test Cases ***
