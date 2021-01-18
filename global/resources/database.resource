@@ -1,8 +1,5 @@
 *** Settings ***
-Library           DatabaseLibrary
-Library           KeePassLibrary
-Library           Collections
-Library           OperatingSystem
+Resource   ${EXECDIR}${/}global${/}resources${/}all.resource
 
 *** Variables ***
 &{kp}             kdbx=${EXECDIR}${/}global${/}files${/}keepass${/}keepass_db.kdbx    key=keepass_db.key

@@ -1,7 +1,5 @@
 *** Settings ***
-Library           Collections
-Resource          Shared.resource
-Resource          database.resource
+Resource   ${EXECDIR}${/}global${/}resources${/}all.resource
 
 *** Keywords ***
 Open acount creation page
