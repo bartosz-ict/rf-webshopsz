@@ -32,8 +32,15 @@ Read unique user based on email
     ${result}=    Query    ${select_query}
     [Return]    ${result}
 
+Insert specific user
+    ${insert_query}=    Set Variable    INSERT INTO `webshopsz`.`oc_customer` (`oc_customer`.`customer_id`,`oc_customer`.`customer_group_id`,`oc_customer`.`store_id`,`oc_customer`.`language_id`,`oc_customer`.`firstname`,`oc_customer`.`lastname`,`oc_customer`.`email`,`oc_customer`.`telephone`,`oc_customer`.`fax`,`oc_customer`.`password`,`oc_customer`.`salt`,`oc_customer`.`cart`,`oc_customer`.`wishlist`,`oc_customer`.`newsletter`,`oc_customer`.`address_id`,`oc_customer`.`custom_field`,`oc_customer`.`ip`,`oc_customer`.`status`,`oc_customer`.`safe`,`oc_customer`.`token`,`oc_customer`.`code`,`oc_customer`.`date_added`)  VALUES (1, 1, 0, 1, 'Franky', 'Insert', 'insert@bartosz.nl', 123456789, '', 'wacht123woord', 'salt01', null, null, 1, 0, '', '123.123.123.123', 1, 0, '', '', '2021-01-24 20:00:00');
+    ${result}=    Query    ${insert_query}
+    [Return]    ${result}
+
+
 Delete unique user based on email
     [Arguments]    ${email}
     ${delete_query}=    Set Variable    DELETE FROM `webshopsz`.`oc_customer` WHERE `oc_customer`.`email` = '${email}';
     ${status}=    Run Keyword and Return Status    Query    ${delete_query}
     Run Keyword Unless    ${status}    Fail    ${delete_query}
+
