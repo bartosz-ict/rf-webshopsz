@@ -4,7 +4,6 @@ Resource   ${EXECDIR}${/}global${/}resources${/}all.resource
 *** Variables ***
 &{kp}             kdbx=${EXECDIR}${/}global${/}files${/}keepass${/}keepass_db.kdbx    key=keepass_db.key
 # &{kp}           kdbx=${EXECDIR}${/}global${/}files${/}keepass${/}keepass_db.kdbx    key=${EXECDIR}${/}global${/}files${/}keepass${/}keepass_db.key
-&{db}             host=webshopsz.westeurope.cloudapp.azure.com    port=3306    name=webshopsz
 
 *** Keywords ***
 Connect to Shop DB
@@ -13,7 +12,7 @@ Connect to Shop DB
     ${entry}=    Get Entries By Title    db_user    first=True
     ${user}=    Get Entry Username    ${entry}
     ${pass}=    Get Entry Password    ${entry}
-    Connect To Database    pymysql    ${db.name}    ${user}    ${pass}    ${db.host}    ${db.port}
+    Connect To Database    pymysql    ${db_shop.db_name}    ${user}    ${pass}    ${db_shop.db_host}    ${db_shop.db_port}
 
 Delete unique account if email is registered
     [Arguments]    ${email}
