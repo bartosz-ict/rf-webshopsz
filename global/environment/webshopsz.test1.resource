@@ -1,4 +1,4 @@
 *** Variables ***
-${SHOP_URL}       http://webshopsz.westeurope.cloudapp.azure.com/
+${SHOP_URL}       http://webshopsz01.westeurope.cloudapp.azure.com/
 ${BROWSER}        chrome
-&{db_shop}        db_host=webshopsz.westeurope.cloudapp.azure.com    db_port=3306    db_name=webshopsz
+&{db_shop}        db_host=webshopsz01.westeurope.cloudapp.azure.com    db_port=3306    db_name=webshopsz
