@@ -3,11 +3,13 @@ Resource   ${EXECDIR}${/}global${/}resources${/}all.resource
 
 *** Variables ***
 &{kp}             kdbx=${EXECDIR}${/}global${/}files${/}keepass${/}keepass_db.kdbx    key=keepass_db.key
-# &{kp}           kdbx=${EXECDIR}${/}global${/}files${/}keepass${/}keepass_db.kdbx    key=${EXECDIR}${/}global${/}files${/}keepass${/}keepass_db.key
 
 *** Keywords ***
 Connect to Shop DB
-    ${home} =    Get Environment Variable    USERPROFILE
+    ${home}=    Get Environment Variable    USERPROFILE
+    ${key_location}=    Set Variable    ${home}${/}.keepass${/}${kp.key}
+    File Should Exist    ${key_location}    You're keyfile is not found at (${key_location}), download this file and place it there.
+    
     Open Keepass Database    ${kp.kdbx}    keyfile=${home}${/}.keepass${/}${kp.key}
     ${entry}=    Get Entries By Title    db_user    first=True
     ${user}=    Get Entry Username    ${entry}

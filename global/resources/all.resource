@@ -14,4 +14,4 @@ Resource          po.shared.resource
 
 *** Variables ***
 #Global variables
-&{KEEPASS}        kdbx=${EXECDIR}${/}global${/}files${/}keepass${/}keepass_db.kdbx    key=${EXECDIR}${/}global${/}files${/}keepass${/}keepass_db.key
+
