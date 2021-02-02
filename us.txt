@@ -1,8 +1,0 @@
-
-Account: As customer; I want to be able to create a new account;
-Account: As customer; I want to be able to log in with my known account
-Account: As customer; I want to see my previous orders when logged in
-
-Cart: As customer I want to increase amount of a product in shopping cart
-Cart: As customer I want to reduce amount of a product in my shopping cart
-Cart: As customer I want to remove a product from my shopping cart

@@ -1,3 +1,4 @@
+output.xml
 *.prefs
 *.pyc
 *.key
@@ -5,6 +6,4 @@
 /*.log
 /*.html
 /*.png
-/.project
 /.pydevproject
-/*.xml

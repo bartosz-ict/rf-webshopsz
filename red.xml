@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <variable name="${env}" value="test1"/>
+    <referencedLibrary type="PYTHON" name="DatabaseLibrary" path="C:/Program Files/Python/Python39/Lib/site-packages/DatabaseLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="KeePassLibrary" path="C:/Program Files/Python/Python39/Lib/site-packages/KeePassLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="C:/Program Files/Python/Python39/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>
