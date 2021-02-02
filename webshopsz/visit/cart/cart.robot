@@ -1,7 +1,7 @@
 *** Settings ***
 Library           String
 Resource          ${EXECDIR}/global/resources/all.resource
-Resource          ${EXECDIR}/webshopsz/testdata/customers.resource
+Resource          ${EXECDIR}/webshopsz/_testdata/customers.resource
 Suite Teardown    Close All Browsers
 
 *** Test Cases ***

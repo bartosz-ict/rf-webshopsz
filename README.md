@@ -38,7 +38,7 @@ rf
 │               │───    item.validate.resource
 │                       ...
 └─── webshopsz
-│    │─── [testdata]
+│    │─── _testdata
 │    │    │────   customers.resource
 │    │    └────   ...
 │    │
