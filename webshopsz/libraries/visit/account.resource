@@ -1,5 +1,5 @@
 *** Settings ***
-Resource   ${EXECDIR}${/}global${/}resources${/}all.resource
+Resource          ${EXECDIR}${/}global${/}resources${/}all.resource
 
 *** Keywords ***
 Open acount creation page

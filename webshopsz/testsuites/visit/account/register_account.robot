@@ -1,8 +1,7 @@
 *** Settings ***
 Library           String
 Resource          ${EXECDIR}/global/resources/all.resource
-Resource          ${EXECDIR}/webshopsz/_testdata/customers.resource
-Suite Teardown    Close All Browsers
+Test Teardown     Close Browser
 
 *** Test Cases ***
 As a customer I can create a new account when it has not been registered
@@ -16,7 +15,7 @@ As a customer I recieve an error when email has been registered for an accountho
     Navigate to the webshop
     Create a new account    ${registered_account}
     Warning message is shown    Warning: E-Mail Address is already registered!
-    
+
 As a customer I want to see my previous orders
     [Setup]    Create an account in the database if not already present    ${registered_account}
     Navigate to the webshop
