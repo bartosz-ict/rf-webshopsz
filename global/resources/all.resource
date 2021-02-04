@@ -7,7 +7,7 @@ Library           OperatingSystem
 Library           SeleniumLibrary
 Library           String
 # Determine which environment file loads with runtime configuration
-Resource          ${EXECDIR}${/}global${/}environment${/}webshopsz.${env}.resource
+Resource          ${EXECDIR}${/}global${/}environment${/}webshopsz.${ENV}.resource
 # Shared keywords
 Resource          ${EXECDIR}${/}global${/}libraries${/}database.resource
 Resource          ${EXECDIR}${/}global${/}libraries${/}selenium.resource
