@@ -6,7 +6,7 @@ An overview of directory structure used in the rf baseline often used in project
 Below is a proposed structure, not all of which is required to be used, but could be when needed. 
 
 
-## Project
+## Project Design
 ```
 rf
 │   README.md
@@ -15,53 +15,50 @@ rf
 └─── global
 │    │
 │    └─── environments
-│    │    │──── test1.resource
+│    │    │─── test1.resource
 │    │    └─── test2.resource     
 │    │
 │    └─── files 
-│    │    └─── keepass - 
+│    │    └─── keepass 
 │    │          └── keepass_db.kdbx
 │    │              
 │    └─── resources
-│    │    │─── all.resource
-│    │    │─── variables.resource
-│    │    └─── libraries.resource
-│    │        ...
+│    │    └─── all.resource
+│    │         ...
 │    │
 │    └─── libraries
-│         │─── functions
-│         │     │─── database_kw.resource
-│         │
-│         └─── components
-│               │───    item.execute.resource
-│               │───    item.input.resource
-│               │───    item.validate.resource
-│                       ...
-└─── webshopsz
-│    │─── _testdata
-│    │    │────   customers.resource
-│    │    └────   ...
-│    │
-│    │─── admin
-│    │    │──── dashboard
-│    │    │──── catalog
-│    │    │──── customers
-│    │    │──── design
-│    │    │──── extensions
-│    │    │──── sales
-│    │    │──── marketing
-│    │    │──── system
-│    │    └──── reports
-│    │ 
-│    └─── visit
-│         │────  account
-│         │────  cart
-│         │────  filtering
-│         │────  navigation
-│         │────  payment
-│         │────  reviews
-│         └────  social
+│          │─── database.resource
+│          └─── selenium.resource
 │
-│─── nextprojectz
+└─── webshopsz
+     │─── libraries
+     │    │────   visit.resource
+     │    └────   admin.resource
+     │
+     │─── testdata
+     │    │────   customers.resource
+     │    └────   ...
+     │
+     └─── testsuites
+          │──── admin
+          │      │──── dashboard
+          │      │──── catalog
+          │      │──── customers
+          │      │──── design
+          │      │──── extensions
+          │      │──── sales
+          │      │──── marketing
+          │      │──── system
+          │      └──── reports
+          │
+          └─── visit
+                 │────  account
+                 │────  cart
+                 │────  filtering
+                 │────  navigation
+                 │────  payment
+                 │────  reviews
+                 └────  social
+ 
 ...
 ```
