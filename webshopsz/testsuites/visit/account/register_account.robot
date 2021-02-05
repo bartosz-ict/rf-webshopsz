@@ -1,5 +1,4 @@
 *** Settings ***
-Library           String
 Resource          ${EXECDIR}/global/resources/all.resource
 Test Teardown     Close Browser
 

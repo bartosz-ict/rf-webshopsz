@@ -1,3 +1,6 @@
+*** Settings ***
+Documentation     Global variables for shop01
+
 *** Variables ***
 ${SHOP_URL}       http://webshopsz01.westeurope.cloudapp.azure.com/
 ${ADMIN_URL}      ${SHOP_URL}/admin

@@ -1,5 +1,6 @@
 *** Settings ***
-# Overview of all libraries
+Documentation     Overview of all libraries and resources. Link to this resource from a test suite to have all keywords available.
+...               Please add new libraries or resources to this file!
 Library           Collections
 Library           DatabaseLibrary
 Library           KeePassLibrary
