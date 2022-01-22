@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <projectConfiguration>
     <configVersion>2</configVersion>
-    <robotExecEnvironment path="C:/RED_0.9.5/Python39" interpreter="Python"/>
     <relativeTo>WORKSPACE</relativeTo>
     <variable name="${ENV}" value="test1"/>
     <referencedLibrary type="PYTHON" name="DatabaseLibrary" path="C:/RED_0.9.5/Python39/Lib/site-packages/DatabaseLibrary/__init__.py" dynamic="false"/>

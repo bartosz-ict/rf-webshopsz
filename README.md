@@ -14,24 +14,21 @@ rf
 │
 └─── global
 │    │
-│    └─── environments
+│    └─── env
 │    │    │─── test1.resource
 │    │    └─── test2.resource     
 │    │
-│    └─── files 
+│    └─── bin 
 │    │    └─── keepass 
 │    │          └── keepass_db.kdbx
 │    │              
 │    └─── resources
-│    │    └─── all.resource
-│    │         ...
-│    │
-│    └─── libraries
+│          └─── all.resource
 │          │─── database.resource
 │          └─── selenium.resource
 │
 └─── webshopsz
-     │─── libraries
+     │─── resources
      │    │────   visit.resource
      │    └────   admin.resource
      │

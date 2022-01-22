@@ -10,14 +10,14 @@ Library           String
 # Determine which environment file loads with runtime configuration
 Resource          ${EXECDIR}${/}global${/}environment${/}webshopsz.${ENV}.resource
 # Shared keywords
-Resource          ${EXECDIR}${/}global${/}libraries${/}database.resource
-Resource          ${EXECDIR}${/}global${/}libraries${/}selenium.resource
+Resource          ${EXECDIR}${/}global${/}resources${/}database.resource
+Resource          ${EXECDIR}${/}global${/}resources${/}selenium.resource
 # Admin keywords
-Resource          ${EXECDIR}${/}webshopsz${/}libraries${/}admin${/}customers.resource
-Resource          ${EXECDIR}${/}webshopsz${/}libraries${/}admin${/}shared.resource
+Resource          ${EXECDIR}${/}webshopsz${/}resources${/}admin${/}customers.resource
+Resource          ${EXECDIR}${/}webshopsz${/}resources${/}admin${/}shared.resource
 # Visit keywords
-Resource          ${EXECDIR}${/}webshopsz${/}libraries${/}visit${/}account.resource
-Resource          ${EXECDIR}${/}webshopsz${/}libraries${/}visit${/}cart.resource
-Resource          ${EXECDIR}${/}webshopsz${/}libraries${/}visit${/}shared.resource
+Resource          ${EXECDIR}${/}webshopsz${/}resources${/}visit${/}account.resource
+Resource          ${EXECDIR}${/}webshopsz${/}resources${/}visit${/}cart.resource
+Resource          ${EXECDIR}${/}webshopsz${/}resources${/}visit${/}shared.resource
 # Testdata
 Resource          ${EXECDIR}${/}webshopsz${/}testdata${/}customers.resource
